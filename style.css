@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Algerian';
+    src: url('files/Algerian\ Regular.ttf') format("truetype");
+    }
+    * {
+    font-family: 'AlgerianRegular';
+    font-size: 18px;
+    }
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; 
+    overflow: hidden;
+    font-family: 'Algerian';
+}
+
+.supercontainer{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.container{
+    max-height: 100vh;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "mimica  telepatia"
+                         "dibujar tararear";
+   
+    box-shadow: 3px 2px 2px  #000000;
+    background-color: black;
+    border: 2px solid black;
+    gap:3px;
+}
+
+
+.container .mimica {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.container .telepatia {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+.container .dibujar {
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 3;
+}
+
+.container .tararear {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.container > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.white{
+    padding: 2px;
+    line-height: 0px;   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.989);
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.white > h1{
+    font-size: 30px;
+    line-height: 50px;
+    padding: 10px;
+}
+
+#mimica{
+    background: url(files/fondoMimica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 98%;
+}
+
+#telepatia{
+    background: url(files/fondoTelepatia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 98%;
+
+}
+
+#dibuja{
+    background: url(files/fondoDibuja.jpg);
+    background-repeat: repeat;
+    background-size: 95%;
+    opacity: 98%;
+}
+
+#imita{
+    background: url(files/fondoImita.jpg);
+    background-repeat: repeat;
+    background-size: 95%;
+    opacity: 98%;
+}
+
+.mimica{
+    background:url(files/azulejosMimica.jpg);  
+}
+
+.tararear{
+    background:url(files/azulejosTararea.jpg);
+}
+
+.dibujar{
+    background-image: url(files/azulejosDibuja.jpg); 
+    
+}
+
+.telepatia{
+    background:url(files/azulejosTelepatia.jpg);     
+}
+
+#imita > h1{
+    line-height: 35px;
+}
+
+.white > h2{
+    font-family: 'Gamja Flower', cursive;
+    font-size: xx-large;
+    color:grey;
+}
+
+#imita > h2{
+    line-height: 20px;
+}
+
+.final{
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.final img{
+    width: 20%;
+    max-width: 20%;
+}
+
+@media (min-width: 1281px) {
+  
+    .final img{
+        width: 20%;
+        max-width: 7%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .final img{
+        width: 20%;
+        max-width: 9%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .final img{
+        width: 20%;
+        max-width: 8%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .final img{
+        width: 20%;
+        max-width: 4%;
+    }
+
+    .white > h1{
+        font-size: 20px;
+    }
+    
+  }
+
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .final img{
+        width: 20%;
+        max-width: 15%;
+    }
+    
+  }
+  
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .final img{
+        width: 20%;
+        max-width: 15%;
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
